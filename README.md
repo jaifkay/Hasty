@@ -6,8 +6,6 @@
 
 My role as a full stack software engineer was to create an interactive ratings system from back end to front end where customers can rate and review Hasty’s services. Below, I will list the actions I took to tackle my responsibilities. 
 
-- Developed an interactive ratings system from back to front end where customers can rate and review Hasty’s services. 
-
 - Designed and created necessary SQL Server stored procedures utilizing joins, foreign keys, tables, UDTs, and constraints.
 
 - Built the RESTful API endpoints with .NET using C# and thoroughly tested functionality with Postman.
