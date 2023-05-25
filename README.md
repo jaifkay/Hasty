@@ -6,22 +6,26 @@
 
 My role as a full stack software engineer was to create an interactive ratings system from back end to front end where customers can rate and review Hasty’s services. Below, I will list the actions I took to tackle my responsibilities. 
 
-- Developed and structured the Hasty's rating system from back to front end.
+- Developed an interactive ratings system from back to front end where customers can rate and review Hasty’s services. 
 
-- Created the necessary procedures in SQL utilizing joins and foreign keys.
+- Designed and created necessary SQL Server stored procedures utilizing joins, foreign keys, tables, UDTs, and constraints.
 
 - Built the RESTful API endpoints with .NET using C# and thoroughly tested functionality with Postman.
 
-- Designed components in React to maximize aesthetics and functionality.
+- Designed components in React, utilizing styling with CSS and Bootstrap, to maximize aesthetics and functionality.
 
-- Utilized styling with CSS and Bootstrap.
+- Maintained proper workflow with Git and GitHub as source control and maintained code quality and continuity throughout the development process.
 
 - Focused on best practices using proper naming convention and casing to avoid compiler issues with team member’s code.
-
-- Maintained workflow using GitBash and GitHub for repo management.
 
 - Created new branches to maintain organization throughout the project.
 
 - Performed commits and pull requests to secure consistency and quality.
+ 
+- Debug functional and logic errors during end-to-end testing with Chrome DevTools.
 
-- Participated in daily stand-ups, code review, and code talks with team members to ensure cohesive implementation of code.
+- Contributed to a dynamic development team utilizing AGILE methodologies, daily stand-ups, code
+discussion, code review, and live debugging while communicating with slack and zoom.
+
+
+
