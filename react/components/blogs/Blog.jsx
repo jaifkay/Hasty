@@ -3,7 +3,7 @@ import Ratings from '../rating/Ratings';
 import * as ratingsService from '../../services/ratingsService';
 
 
-function Blog({ currentUser, blog: aBlog, onDeleteClicked }) {
+function Blog() {
 
           <p className="text-center">
             <Ratings isReadOnly={true} entityId={aBlog.id} entityTypeId={ratingsService.entityTypes.BLOG}></Ratings>
