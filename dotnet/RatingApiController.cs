@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Sabio.Models;
-using Sabio.Models.Domain.Ratings;
-using Sabio.Models.Requests.Ratings;
-using Sabio.Services;
-using Sabio.Web.Controllers;
-using Sabio.Web.Models.Responses;
+using Hasty.Models;
+using Hasty.Models.Domain.Ratings;
+using Hasty.Models.Requests.Ratings;
+using Hasty.Services;
+using Hasty.Web.Controllers;
+using Hasty.Web.Models.Responses;
 using System;
 using System.Drawing.Printing;
 
-namespace Sabio.Web.Api.Controllers
+namespace Hasty.Web.Api.Controllers
 {
     [Route("api/ratings")]
     [ApiController]
