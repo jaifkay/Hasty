@@ -1,4 +1,3 @@
-import { lazy } from 'react';
 const Ratings = lazy(() => import('../components/rating/Ratings'));
 
 const routes = [
@@ -11,7 +10,5 @@ const routes = [
     isAnonymous: true,
   },  
 ];
-
-let allRoutes = [...routes, ...errorRoutes];
 
 export default allRoutes;
