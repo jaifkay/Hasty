@@ -1,9 +1,9 @@
-﻿using Sabio.Data;
-using Sabio.Data.Providers;
-using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Models.Domain.Ratings;
-using Sabio.Models.Requests.Ratings;
+﻿using Hasty.Data;
+using Hasty.Data.Providers;
+using Hasty.Models;
+using Hasty.Models.Domain;
+using Hasty.Models.Domain.Ratings;
+using Hasty.Models.Requests.Ratings;
 using System;
 using System.Collections.Generic;
 using System.Data;
