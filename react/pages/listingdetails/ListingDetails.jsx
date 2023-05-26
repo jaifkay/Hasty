@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import Ratings from '../../components/rating/Ratings';
 import * as ratingsService from '../../services/ratingsService';
 
-function ListingDetails(props) {
+function ListingDetails() {
   const params = useParams();
 
                 <div className="col">
