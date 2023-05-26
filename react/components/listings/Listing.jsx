@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Ratings from '../rating/Ratings';
 import * as ratingsService from '../../services/ratingsService';
 
 
-function Listing(props) {
+function Listing() {
 
           <div className="text-center">
             <Ratings
