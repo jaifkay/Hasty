@@ -1,17 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Hasty.Models;
-using Hasty.Models.Domain.Ratings;
-using Hasty.Models.Requests.Ratings;
-using Hasty.Services;
-using Hasty.Web.Controllers;
-using Hasty.Web.Models.Responses;
+using Sabio.Models;
+using Sabio.Models.Domain.Ratings;
+using Sabio.Models.Requests.Ratings;
+using Sabio.Services;
+using Sabio.Web.Controllers;
+using Sabio.Web.Models.Responses;
 using System;
 using System.Drawing.Printing;
-using System.Runtime.InteropServices;
 
-namespace Hasty.Web.Api.Controllers
+namespace Sabio.Web.Api.Controllers
 {
     [Route("api/ratings")]
     [ApiController]
@@ -20,10 +19,10 @@ namespace Hasty.Web.Api.Controllers
         IRatingService _service = null;
         IAuthenticationService<int> _authService = null;
 
-        public RatingApiController(
-            IRatingService service,
-            ILogger<RatingApiController> logger,
-            IAuthenticationService<int> auth) : base(logger)
+        public RatingApiController (
+            IRatingService service, 
+            ILogger<RatingApiController> logger, 
+            IAuthenticationService<int> auth): base(logger)
         {
             _service = service;
             _authService = auth;
@@ -58,6 +57,31 @@ namespace Hasty.Web.Api.Controllers
             }
 
             return StatusCode(iCode, response);
+
         }
+
+        [HttpPost]
+        public ActionResult<ItemResponse<int>> Add (RatingAddRequest model)
+        {
+            ObjectResult result = null;
+
+            try
+            {
+                int userId = _authService.GetCurrentUserId();
+
+                int id = _service.Create(model, userId);
+                ItemResponse<int> response = new ItemResponse<int>() { Item = id };
+
+                result = Created201(response);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex.ToString());
+                ErrorResponse response = new ErrorResponse(ex.Message);
+                result = StatusCode(500, response);
+            }
+            return result;
+        }
+
     }
 }
